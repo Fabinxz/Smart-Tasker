@@ -28,8 +28,6 @@ function inserir_tarefa() {
         li.append(h5)
         var ul = document.getElementById("tasks")
         ul.appendChild(li)
-        // li.style.position = "relative"
-        // li.style.top = "-100px"
         ul.style.padding = "0px"
         ul.style.paddingTop = "10px"
         ul.style.listStyle = "none"
@@ -99,6 +97,8 @@ function inserir_tarefa() {
         var id_item_remove = btn_concluir.parentNode
         id_item_remove.remove()
         tabela_concluidos(id_item_remove)
+        notifyy()
+        playAudio()
     }
 }
 
@@ -199,4 +199,13 @@ function pegar_hora() {
     let time = h + ":" + m;
 
     return time
+}
+
+function notifyy() {
+    $('#notify').toast({delay:5000});
+    $('#notify').toast("show");
+}
+
+function playAudio() {
+    document.getElementById("audio").play();
 }
