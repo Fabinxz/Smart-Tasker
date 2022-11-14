@@ -1,1 +1,1 @@
-# A simple checklist tasks using HTML, CSS and Javascript w.@Revocable
+A simple checklist tasks using HTML, CSS and Javascript w.@Revocable
