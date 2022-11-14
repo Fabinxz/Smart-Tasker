@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+  <title>Smart Tasker</title>
+</head>
+
+<body>
+  <nav id="nav" class="navbar navbar-dark sticky-top px-5 pt-3">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/logo.png" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <ul class="nav justify-content-center nav-pills">
+      <li><a id="light" class="nav-link" href="#"><p>Tasks</p></a></li>
+      <li><a class="nav-link" href="#tables">Completed Tasks</a></li>
+      <li><a class="nav-link" href="#tables">Removed Tasks</a></li>
+      <li><a class="nav-link" href="#">Report</a></li>
+    </ul>
+    <a class="butt" href="#">
+      <button id="btn">
+        <h5>Sign in</h5>
+      </button>
+    </a>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div id="sub"><span>Smart Tasker ➜</span> completing your tasks has never been easier!</div>
+      <div id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, illo laudantium? Labore, quaerat at ullam deleniti perspiciatis possimus dignissimos quia atque. Necessitatibus consectetur, dicta ullam eos reprehenderit minus pariatur atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div id="try">
+        <div class="insercao">
+          <div id="entrada">
+            <input type="text" id="txt_tarefa">
+          </div>
+        </div> 
+      </div>
+      <div id="butto"><button class="d-flex justify-content-center" id="btn_insert" onclick="inserir_tarefa()"><h5>Insert</h5></button></div>
+      <div id="box1">
+        <h1>Tasks List</h1>
+        <ul id="tasks"></ul>
+      </div>
+      <a id="anchor" href="#tables"><img class="imgseta" src="assets/arrowdown.png" alt="..."></a>
+    </div>
+  </section>
+  
+    <div id="tables">
+      <div class="container2">
+        <div id="icon"></div>
+        <div id="table1">
+            <div class="rounded-5">
+              <table id="tb1" class="table rounded-5 table-hover align-middle mb-0 text-light">
+                <thead>
+                  <tr class="text-primary">
+                    <th><h5>⠀Task Name</h5></th>
+                    <th><h5>Date</h5></th>
+                    <th><h5>Hour</h5></th>
+                  </tr>
+                </thead>
+                <tbody id="tbd1"></tbody>
+              </table>
+            </div>
+        </div>
+        <div id="txt1"><h5>Completed Tasks</h5></div>
+        <div id="table2">
+          <div class="rounded-5">
+            <table id="tb2" class="table rounded-5 table-hover align-middle mb-0 text-light">
+              <thead>
+                <tr class="text-primary">
+                  <th><h5>⠀Task Name</h5></th>
+                  <th><h5>Date</h5></th>
+                  <th><h5>Hour</h5></th>
+                </tr>
+              </thead>
+              <tbody id="tbd2"></tbody>
+            </table>
+          </div>  
+        </div>
+        <div id="txt2"><h5>Removed Tasks</h5></div>
+      </div>
+    </div>
+
+    <a id="anchor2" href="#"><img class="imgseta2" src="assets/arrowup.png" alt="..."></a>
+
+    <footer>
+      <p>Copyright © 2022 Smart Tasker - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script_main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+</html>
