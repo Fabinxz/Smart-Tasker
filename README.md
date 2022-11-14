@@ -1,4 +1,5 @@
 A simple checklist tasks using HTML, CSS and Javascript - w.@revocable
 
-![image](https://user-images.githubusercontent.com/99039864/201554096-69e7a387-3b64-4e73-a6a5-f1c5ff3fd770.png)
-![image](https://user-images.githubusercontent.com/99039864/201554201-89e2d5c3-53ec-4a50-af0f-c4959fb30c04.png)
+![smart1 1](https://user-images.githubusercontent.com/99039864/201554466-789cd91d-8d94-465a-bd84-b211c3a61b4d.png)
+![smart2 2](https://user-images.githubusercontent.com/99039864/201554548-c11ada4c-1e7f-4685-ad97-072b625c625d.png)
+
