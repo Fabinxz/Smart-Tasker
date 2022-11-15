@@ -319,7 +319,7 @@ input[type="text"]
 
 #tables
 {
-    height: 550px;
+    height: 570px;
     background-color: rgba(248, 242, 242, 0.781);
 }
 
@@ -445,7 +445,7 @@ input[type="text"]
     position: relative;
     width: 60px;
     height: 60px;
-    top: -55px;
+    top: -70px;
     transition: 0.3s;
     left: 120px;
     z-index: 1;
@@ -477,7 +477,7 @@ footer p{
     color: #000;
     font-weight: 500;
     background: none;
-    top: -35px;
+    top: -45px;
     right: 80px;
 }
 
