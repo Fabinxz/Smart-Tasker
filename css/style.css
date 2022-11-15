@@ -12,24 +12,49 @@ html
 {
     background-color: rgba(31, 31, 31, 1);
     scroll-behavior: smooth;
+    height: 0px;
 }
 
 body
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    background-color: rgba(248, 242, 242, 0.781);
 }
+
+body.dark .navbar-dark, body.dark section, body.dark #tables, body.dark footer, body.dark footer p {background-color: rgba(31, 31, 31, 1);}  
+
+body.dark #box1, body.dark #table1, body.dark #table2 {background-color: rgba(76, 76, 76, 1);}
+
+body.dark .nav li a, body.dark .nav li a p {color: rgb(150, 148, 148)}
+
+body.dark .nav li a:hover, body.dark .nav li a p:hover {color: #fff}
+
+body.dark #sub, body.dark footer p, body.dark #txt1 h5, body.dark #txt2 h5{color: #fff}
+
+body.dark #text {color: rgb(165, 165, 164)}
+
+/* body.dark .checkbox-label {background-color: #fff;}
+
+body.dark .checkbox-label .ball {background-color: #111;} */
 
 .navbar
 {
-    background-color: rgba(31, 31, 31, 1);
+    /* background-color: rgba(31, 31, 31, 1); */
+    background: none;
+}
+
+.navbar-dark
+{
+    background-color: rgba(248, 242, 242, 0.781);
 }
 
 .nav li a
 {
     text-align: center;
     text-decoration: none;
-    color: rgb(150, 148, 148);
+    /* color: rgb(150, 148, 148); */
+    color: #000;
     margin-left: 15px;
     margin-right: 15px;
     font-size: 22px;
@@ -40,19 +65,20 @@ body
 .nav li a:hover
 {
     /* color: rgb(31, 101, 248); */
-    color: #fff;
+    color: rgb(31, 101, 248);
 }
 
 .nav li a p
 {
-    color: rgb(150, 148, 148);
+    /* color: rgb(150, 148, 148); */
+    color: #000;
     transition: 0.3s;
     /* text-decoration: underline; */
 }
 
 .nav li a p:hover
 {
-    color: #fff;
+    color: rgb(31, 101, 248);
 }
 
 a.navbar-brand
@@ -98,6 +124,7 @@ a.navbar-brand img
 section
 {
     background-color: rgba(31, 31, 31, 1);
+    background-color: rgba(248, 242, 242, 0.781);
     height: 600px;
 }
 
@@ -108,12 +135,15 @@ section
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 700px 412px;
-    background-color: rgba(31, 31, 31, 1);
+    /* background-color: rgba(31, 31, 31, 1); */
+    background: none;
+    border-radius: 15px;
 }
 
 #sub
 {
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
     font-size: 42px;
     font-weight: bolder;
     grid-row: 1/2;
@@ -129,7 +159,8 @@ section
 
 #text
 {
-    color:rgb(165, 165, 164);
+    /* color:rgb(165, 165, 164); */
+    color: #000;
     grid-row: 2/3;
     grid-column: 1/2;
     font-size: 17px;
@@ -205,7 +236,7 @@ input[type="text"]
 {
     grid-row: 1/4;
     grid-column: 2/3;
-    background-color: rgba(76, 76, 76, 1);
+    background-color: rgba(31, 31, 31, 1);
     margin-top: 20px;
     margin-left: 20px;
     height: 450px;
@@ -235,14 +266,15 @@ input[type="text"]
     width: 12px;
     height: 12px;
     border-radius: 10px;
-    background-color: rgba(31, 31, 31, 1);
+    /* background-color: rgba(31, 31, 31, 1); */
 }
     
 ::-webkit-scrollbar-track 
 {
     border: 0px;
     border-radius: 0px;
-    background-color: rgba(31, 31, 31, 1);
+    /* background-color: rgba(31, 31, 31, 1); */
+    background: none;
 }
     
 ::-webkit-scrollbar-thumb
@@ -288,7 +320,7 @@ input[type="text"]
 #tables
 {
     height: 550px;
-    background-color: rgba(31, 31, 31, 1);
+    background-color: rgba(248, 242, 242, 0.781);
 }
 
 .container2
@@ -298,7 +330,8 @@ input[type="text"]
     margin-right: 120px;
     grid-template-rows: 70px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(31, 31, 31, 1);
+    /* background-color: rgba(31, 31, 31, 1); */
+    background: none;
     /* border: 1px solid #fff; */
 }
 
@@ -311,7 +344,7 @@ input[type="text"]
     background-repeat: no-repeat;
     background-position-x: -110px;
     background-position-y: 40px;
-    filter: drop-shadow(1px 0px 0px rgb(255, 255, 255));
+    filter: drop-shadow(1px 0px 0px rgb(0, 0, 0));
     transition: 0.3s;
 }
 
@@ -326,7 +359,7 @@ input[type="text"]
     grid-row: 2/3;
     grid-column: 2/3;
     height: 400px;
-    background-color: rgba(76, 76, 76, 1);
+    background-color: rgba(31, 31, 31, 1);
     border-radius: 10px;
     margin-right: 15px;
     margin-left: 15px;
@@ -357,7 +390,7 @@ input[type="text"]
     grid-row: 2/3;
     grid-column: 3/4;
     height: 400px;
-    background-color: rgba(76, 76, 76, 1);
+    background-color: rgba(31, 31, 31, 1);
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
@@ -387,7 +420,7 @@ input[type="text"]
 
 #txt1 h5
 {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 25px;
 }
@@ -401,7 +434,7 @@ input[type="text"]
 
 #txt2 h5
 {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 25px;
 }
@@ -435,14 +468,15 @@ input[type="text"]
 
 footer
 {
-    background-color: rgba(31, 31, 31, 1);
+    background-color: rgba(248, 242, 242, 0.781);
 }
 
 footer p{
     position: relative;
     text-align: end;
-    color: #fff;
-    background-color: rgba(31, 31, 31, 1);
+    color: #000;
+    font-weight: 500;
+    background: none;
     top: -35px;
     right: 80px;
 }
@@ -471,3 +505,53 @@ footer p{
 {
     color: #fff;
 }
+
+.checkbox
+{
+    position: absolute;
+    opacity: 0;
+}
+  
+.checkbox-label
+{
+    position: relative;
+    right: 610px;
+    top: -25px;
+    background-color: #000;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.fa-moon
+{
+    color: rgb(31, 101, 248);
+}
+
+.fa-sun
+{
+    color: rgb(31, 101, 248);
+}
+  
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+  
+.checkbox:checked + .checkbox-label .ball 
+{
+    transform: translateX(24px);
+}
+  

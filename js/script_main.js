@@ -10,7 +10,8 @@ function inserir_tarefa() {
         var h5 = document.createElement("h5")
         h5.setAttribute("id", `h5_${tasks.length}`)
         h5.append(no_texto_tarefa)
-        h5.style.backgroundColor = "rgb(165, 165, 164)"
+        // h5.style.backgroundColor = "rgb(165, 165, 164)"
+        h5.style.backgroundColor = "rgba(248, 242, 242, 0.781)"
         h5.style.borderRadius = "10px"
         h5.style.width = "350px"
         h5.style.height = "45px"
@@ -98,7 +99,6 @@ function inserir_tarefa() {
         id_item_remove.remove()
         tabela_concluidos(id_item_remove)
         notifyy()
-        playAudio()
     }
 }
 
@@ -204,8 +204,15 @@ function pegar_hora() {
 function notifyy() {
     $('#notify').toast({delay:5000});
     $('#notify').toast("show");
+    playAudio()
 }
 
 function playAudio() {
     document.getElementById("audio").play();
 }
+
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
+
