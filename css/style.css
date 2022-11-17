@@ -377,7 +377,7 @@ input[type="text"]
 #table1 h5
 {
     padding-top: 5px;
-    text-shadow: 2px 2px 10px #000;
+    color: #fff;
 }
 
 #table1 #tb
@@ -408,7 +408,7 @@ input[type="text"]
 #table2 h5
 {
     padding-top: 5px;
-    text-shadow: 2px 2px 10px #000;
+    color: #fff;
 }
 
 #txt1
